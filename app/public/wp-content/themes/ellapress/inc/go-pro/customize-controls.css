@@ -1,0 +1,30 @@
+#customize-controls .control-section-ellapress .accordion-section-title:hover,
+#customize-controls .control-section-ellapress .accordion-section-title:focus {
+	background-color: #09a40ca8;
+	color: #fff;
+}
+
+.control-section-ellapress .accordion-section-title .button {
+	margin-top:  -4px;
+	font-weight: 400;
+	margin-left: 8px;
+	background-color: #0c290d;
+	border: none;
+	/*border-color: #0A2F9F;*/
+	color: #fff;
+}
+
+
+li#accordion-section-ellapress h3.accordion-section-title {
+    background-color: #09a40c;
+    color: #fff;
+}
+
+#customize-controls .customize-info .customize-help-toggle {
+    cursor: pointer;
+}
+
+.rtl .control-section-ellapress .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}

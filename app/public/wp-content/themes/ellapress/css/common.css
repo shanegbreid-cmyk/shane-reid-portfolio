@@ -1,0 +1,1431 @@
+/*
+File Name: common.css
+Version: 1.0.0
+Author: pixelonetry
+Author URI: https://pixelonetry.com/
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Description: Free version of CSS for WordPress.org theme/plugin.
+*/
+/* ----------------------------------------------------------------
+			Video CSS
+-----------------------------------------------------------------*/
+/*INLINE VIDEO*/
+    
+    /*video inline*/
+    a.peVideo video, a.peVideo iframe {
+        display: block;
+		width: 100% !important;
+        height: 100% !important;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    
+    .ppcontrols.fade {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+        opacity:1;
+    }
+    
+    .videoWrapper {
+        position: relative;
+        height: 0;
+        margin-bottom:20px;
+        overflow:hidden;
+    }
+    
+    .videoWrapper a.peVideo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#666;
+		cursor: pointer;
+    }
+    
+	.videoWrapper a.peVideo span.largePlay {
+        height: 100%;
+        left: 0;
+        margin: 0 !important;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        opacity:0.7;
+		background: url("img/vid_start.png") no-repeat center center;
+    }
+    
+    .videoWrapper a.peVideo:hover span.largePlay{
+        opacity:1;
+    }
+
+	.videoWrapper a.peVideo > div {
+        height: 100%;
+        left: 0;
+        margin: 0 !important;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+		background-color: black;
+    }
+
+    .videoWrapper.sixteenBYnine {
+        padding-bottom:56.25%;
+    }
+    
+    .videoWrapper.fourBYthree {
+        padding-bottom:75%;
+    }
+    
+    .videoWrapper.youtube{
+        padding-top: 0;
+    }
+	
+	.videoWrapper.youtube .peVideo img {
+		margin-top:-9.41%;
+	}
+
+	.videoWrapper.youtube.customCover .peVideo img{
+		margin-top:0;
+	}
+
+    .videoWrapper.local,
+    .videoWrapper.vidly,
+    .videoWrapper.vimeo{
+        padding-top:0;
+    }
+    /* ----------------------------------------------------------------
+			pixelonetry.background
+      -----------------------------------------------------------------*/
+      
+/*background component css*/
+
+.peBackground {
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+	width:100%;
+	height:100%;
+}
+
+.pePatternOverlay{
+	z-index:2;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(../img/content/pat1.png) repeat;
+}
+
+.peBackground img{
+	/* background-color: rgba(0,0,0,.01); */
+	display:block;
+	position:absolute;
+	-webkit-transform-origin: 0 0;
+}
+
+.peOverlay{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.bgColor{
+	z-index:3;
+	background-color: rgba(255,255,255,0.1);
+}
+
+.peBackground img {
+}
+
+.peBackground img.pePrevBW{
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	-o-transition: opacity 0.4s;
+	-ms-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	z-index:1;
+}
+
+.peBackground img.pePrevColor{
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	-o-transition: opacity 0.4s;
+	-ms-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	z-index:2;
+}
+
+.peBackground img.peCurrentBW{
+	-webkit-transition: opacity 0.8s;
+	-moz-transition: opacity 0.8s;
+	-o-transition: opacity 0.8s;
+	-ms-transition: opacity 0.8s;
+	transition: opacity 0.8s;
+	z-index:4;
+}
+
+.peBackground img.peCurrentColor{
+	-webkit-transition: opacity 1.2s;
+	-moz-transition: opacity 1.2s;
+	-o-transition: opacity 1.2s;
+	-ms-transition: opacity 1.2s;
+	transition: opacity 1.2s;
+	z-index:5;
+}
+
+/*escape responsive img flow technique for this component*/
+.peBackground img, .pePatternOverlay img{
+    max-width:inherit;
+}
+/* ----------------------------------------------------------------
+			pixelonetry.isotope
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			pixelonetry.carousel
+ -----------------------------------------------------------------*/
+    .row-fluid.carouselBox {
+        left: 10px !important;
+        margin-left: -20px !important;
+        position: relative;
+        width: auto !important;
+    }
+
+    .row-fluid.carouselBox .peWrap > div > div {
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+      /* ----------------------------------------------------------------
+			pixelonetry.ajaxportfolio
+      -----------------------------------------------------------------*/
+
+      .pe-ajax-portfolio .pe-ajax-portfolio-navigation {
+        text-align: center;
+        visibility: hidden;
+    }
+        
+    /* ----------------------------------------------------------------
+		Volo Common
+      -----------------------------------------------------------------*/
+      .peVolo .peWrap, .peVolo .peWrap > div, .peVolo .peWrap > div > img, .peVolo .peWrap > div > a, .peVolo .peWrap > div > a > img  {
+
+        padding: 0 !important;
+        border: 0 !important;
+        vertical-align: baseline;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        outline: 0! important;
+        text-decoration: none !important;
+    }
+    
+    .peVolo {
+        padding: 0 !important;
+        overflow: hidden;
+        outline: 0! important;
+        text-decoration: none !important;
+        position: relative;
+    }
+    
+    
+    .peVolo > div img {
+        display: none;
+    }
+    
+    .peVolo > div.visible img {
+        display: block;
+    }
+    
+    .peVolo > .peWrap {
+    }
+    
+    .peVolo > .peWrap > div img {
+        display: block;
+    }
+    
+    .peVolo.peVoloMobile .peWrap > div img {
+        -webkit-transform: translateZ(0px);
+    }
+    
+    .peVolo .peWrap, .peVolo .peWrap > div {
+        -webkit-transform: translateZ(0px);
+    }
+    
+    .peVolo .peWrap > div.scale img {
+        -webkit-transform-origin: 0px 0px;
+        -moz-transform-origin: 0px 0px;
+        -o-transform-origin: 0px 0px;
+        -ms-transform-origin: 0px 0px;
+        max-width: none;
+    }
+    
+    .peVolo .peWrap {
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    
+    .peVolo .peWrap > div {
+        visibility: hidden;
+        overflow: hidden;
+        float: left;
+        background-color:rgba(255,255,255,0.01);
+    }
+    
+    .peVolo .peWrap > div.visible {
+    }
+
+    /* ----------------------------------------------------------------
+		Vario transitions
+      -----------------------------------------------------------------*/
+      @-webkit-keyframes fadeOutUpMed {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(-500px);
+        }
+    }
+    @-moz-keyframes fadeOutUpMed {
+        0% {
+            opacity: 1;
+            -moz-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -moz-transform: translateY(-500px);
+        }
+    }
+    @-o-keyframes fadeOutUpMed {
+        0% {
+            opacity: 1;
+            -o-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -o-transform: translateY(-500px);
+        }
+    }
+    @keyframes fadeOutUpMed {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            transform: translateY(-500px);
+        }
+    }
+    
+    .fadeOutUpMed {
+        -webkit-animation-name: fadeOutUpMed;
+        -moz-animation-name: fadeOutUpMed;
+        -o-animation-name: fadeOutUpMed;
+        animation-name: fadeOutUpMed;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @-webkit-keyframes fadeOutDownMed {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(500px);
+        }
+    }
+    @-moz-keyframes fadeOutDownMed {
+        0% {
+            opacity: 1;
+            -moz-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -moz-transform: translateY(500px);
+        }
+    }
+    @-o-keyframes fadeOutDownMed {
+        0% {
+            opacity: 1;
+            -o-transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            -o-transform: translateY(500px);
+        }
+    }
+    @keyframes fadeOutDownMed {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        100% {
+            opacity: 0;
+            transform: translateY(500px);
+        }
+    }
+    
+    .fadeOutDownMed {
+        -webkit-animation-name: fadeOutDownMed;
+        -moz-animation-name: fadeOutDownMed;
+        -o-animation-name: fadeOutDownMed;
+        animation-name: fadeOutDownMed;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @-webkit-keyframes fadeOutScale {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -webkit-transform: scale(.5);
+        }
+    }
+    @-moz-keyframes fadeOutScale {
+        0% {
+            opacity: 1;
+            -moz-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -moz-transform: scale(0.5);
+        }
+    }
+    @-o-keyframes fadeOutScale {
+        0% {
+            opacity: 1;
+            -o-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -o-transform: scale(0.5);
+        }
+    }
+    @keyframes fadeOutScale {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+    }
+    
+    .fadeOutScale {
+        -webkit-animation-name: fadeOutScale;
+        -moz-animation-name: fadeOutScale;
+        -o-animation-name: fadeOutScale;
+        animation-name: fadeOutScale;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @-webkit-keyframes fadeOutZoom {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -webkit-transform: scale(1.5);
+        }
+    }
+    @-moz-keyframes fadeOutZoom {
+        0% {
+            opacity: 1;
+            -moz-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -moz-transform: scale(1.5);
+        }
+    }
+    @-o-keyframes fadeOutZoom {
+        0% {
+            opacity: 1;
+            -o-transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            -o-transform: scale(1.5);
+        }
+    }
+    @keyframes fadeOutZoom {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        100% {
+            opacity: 0;
+            transform: scale(1.5);
+        }
+    }
+    
+    .fadeOutZoom {
+        -webkit-animation-name: fadeOutZoom;
+        -moz-animation-name: fadeOutZoom;
+        -o-animation-name: fadeOutZoom;
+        animation-name: fadeOutZoom;
+    }
+    
+    
+      /* ----------------------------------------------------------------
+			flare common
+      -----------------------------------------------------------------*/
+      .peFlareLightbox  {
+        z-index: 10000;
+        position: fixed;
+        overflow: hidden;
+        top: 0px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0px);
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;	
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+        overflow: hidden;
+        left: 0px;
+        display: none;
+        zoom: 1;
+    }
+    
+    .peFlareLightbox img {
+        max-width: none !important;
+    }
+    
+    .peFlareLightbox div, .peFlareLightbox span, .peFlareLightbox img {
+        outline: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        -moz-box-shadow:0px;
+        -webkit-box-shadow: 0px;
+        box-shadow:         0px;
+    }
+    
+    .peFlareLightbox.peFlareLightboxActive  {
+        opacity: 1;
+    }
+    
+    .peFlareLightbox .peFlareLightboxHidden {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        filter: Alpha(Opacity=0);
+        z-index: 1;
+    }
+    
+    .peFlareLightbox .peFlareLightboxOverlay {
+        position: absolute;
+        opacity: 0.8;
+        background-color: black;
+        filter: Alpha(Opacity=100);
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    .peFlareLightbox .peFlareLightboxContent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions {
+        -webkit-transform: translateZ(0px);
+        -webkit-transition: top 0.5s;
+        -moz-transition: top 0.5s;
+        -o-transition: top 0.5s;
+        -ms-transition: top 0.5s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs {
+        -webkit-transform: translateZ(0px);
+        position: absolute;
+        width: 100%;
+        height: 86px;
+        margin-top: 0px;
+        top: 100%;
+        z-index: 5;
+        -webkit-transition: margin-top 0.5s;
+        -moz-transition: margin-top 0.5s;
+        -o-transition: margin-top 0.5s;
+        -ms-transition: margin-top 0.5s;
+    }
+    
+    .peFlareLightbox .peFlareLightboxVideo {
+        -webkit-transform: translateZ(0px);
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;	
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .peFlareLightbox .peFlareLightboxVideo video {
+        display: block;
+    }
+    
+    
+    
+    .peFlareLightbox .peFlareLightboxVideo.peFlareLightboxActive {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .peFlareLightbox .peFlareLightboxVideo > div, .peFlareLightbox .peFlareLightboxVideo > iframe {
+        width: 100%;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs.peFlareLightboxActive {
+        margin-top: -84px;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > span {
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: -50px;
+    }
+    
+    .peFlareLightbox.msie .peFlareLightboxThumbs > span {
+        background-color: black;
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div {
+        overflow: hidden;
+        background-color: black;
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > div {
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    .peFlareLightbox.mobile .peFlareLightboxThumbs > div > div {
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+    }
+    
+    .peFlareLightbox.mobile .peFlareLightboxThumbs > div > div.touchMove {
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
+        -ms-transition: all 0s;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > div > span {
+        width: 90px;
+        height: 60px;
+        display: block;
+        overflow: hidden;
+        float: left;
+        margin: 10px 0px 10px 10px;
+        cursor: pointer;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > span {
+        width: 90px;
+        height: 60px;
+        display: block;
+        overflow: hidden;
+        float: left;
+        margin: 10px 0px 10px 10px;
+        cursor: pointer;
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > span.loaded {
+        background-image: none;
+    }
+    
+    .peFlareLightbox .peFlareLightboxContent > div {
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        -ms-transition: all 1s;
+        -webkit-transform: translateZ(0px);
+        position: absolute;
+        overflow:hidden;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    
+    .peFlareLightbox .peFlareLightboxContent > div.touchMove {
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
+        -ms-transition: all 0s;
+    }
+    
+    .peFlareLightbox .peFlareLightboxControls {
+        -webkit-transform: translateZ(0px);
+        z-index: 1000;
+        left:50%;
+        position: absolute;
+    }
+    
+    .peFlareLightbox .peFlareLightboxControls > div{
+        position:relative;
+        left:-50%;
+    }
+    
+    .peFlareLightbox .peFlareLightboxControls a {
+        display: block;
+        float: right;
+        margin: 5px 5px 5px 0px;
+        z-index: 1000;
+    }
+    
+    .peFlareLightbox .peFlareLightboxSpinner {
+        -webkit-transform: translateZ(0px);
+        z-index: 1010;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        filter: Alpha(Opacity=100);
+    }
+    
+    .peFlareLightbox .peFlareLightboxSpinner span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute; 
+        top: 50%; 
+        margin-top: -12px;
+        left: 50%;
+        margin-left: -12px;
+        border-radius: 4px;
+        filter: Alpha(Opacity=100);
+    }
+    
+    .peFlareLightbox a.peFlareLightboxVideoIcon {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0px);
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        position:absolute;
+        z-index:10;
+        cursor: pointer;
+        display: block;
+        height: 84px;
+        width: 84px;
+        top:50%;
+        left:50%;
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .peFlareLightbox a.peFlareLightboxVideoIcon.peFlareLightboxActive {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .peFlareLightbox a.peFlareLightboxVideoIcon span {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        position:relative;
+        display:block;
+        width:84px;
+        height:84px;
+        margin-top:-42px;
+        margin-left:-42px;
+    }
+    
+    
+    .peFlareLightbox .peFlareLightboxContent .peFlareLightboxRenderImage img {
+        -webkit-transition: all 1s;
+    }
+    
+    
+    
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery {
+        -webkit-transition: all 0s;
+        -moz-transition: all 0s;
+        -o-transition: all 0s;
+        -ms-transition: all 0s;
+        background-color: black;
+        filter: Alpha(Opacity=100);
+        opacity: 1;
+    }
+    
+    
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery img {
+        display:block;
+        position:absolute;
+        -webkit-transform-origin: 0 0;
+    
+        -webkit-transform: translateZ(0px);
+    
+        /*
+        -webkit-transition: opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        -ms-transition: opacity 0.8s;
+        */
+    }
+        
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery img.pePrevBW{
+        -webkit-transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        -o-transition: opacity 0.4s;
+        -ms-transition: opacity 0.4s;
+    
+        z-index:1;
+    }
+        
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery img.pePrevColor{
+        -webkit-transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        -o-transition: opacity 0.4s;
+        -ms-transition: opacity 0.4s;
+    
+        z-index:2;
+    }
+        
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery img.peCurrentBW{
+    
+        -webkit-transition: opacity 0.8s;
+        -moz-transition: opacity 0.8s;
+        -o-transition: opacity 0.8s;
+        -ms-transition: opacity 0.8s;
+    
+        z-index:4;
+    }
+        
+    .peFlareLightbox .peFlareLightboxContent > div.peFlareLightboxRenderGallery img.peCurrentColor{
+    
+        -webkit-transition: opacity 1.2s;
+        -moz-transition: opacity 1.2s;
+        -o-transition: opacity 1.2s;
+        -ms-transition: opacity 1.2s;
+    
+        z-index:5;
+    }
+    
+    /*Captions*/
+    
+    .peFlareDescription {
+        display: none !important;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div,
+    .peFlareLightbox .peFlareLightboxCaptions > div{
+        margin:0;
+        padding:0;
+        border-radius:0;
+        box-shadow:none;
+        border:none;
+        outline:none;
+        background:transparent;
+    }
+    
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div {
+        -webkit-transform: translateZ(0px);
+        width: 100%;
+        opacity: 0;
+        filter: Alpha(Opacity=0);
+        padding: 0px;
+        margin: 0px;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        position: absolute;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div {
+        padding: 25px;
+        margin: auto;
+        max-width: 650px;
+        overflow:hidden;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > h3,
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > p {
+        padding:0;
+        margin:0;
+        border:none;
+        outline:none;
+        background:transparent;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > p{
+        margin-top:15px;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div.peFlareLightboxActive {
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        opacity: 1;
+    }
+    
+    /*mobile resolution*/
+    @media (min-width: 480px) and (max-width: 767px) {
+        
+        .peFlareLightbox a.peFlareLightboxVideoIcon {
+            height: 42px;
+            width: 42px;
+        }
+        
+        .peFlareLightbox a.peFlareLightboxVideoIcon span {
+            width:42px;
+            height:42px;
+            margin-top:-21px;
+            margin-left:-21px;
+        }
+    
+     }
+    
+    /*hide lightbox gallery content in page*/
+    
+    .hiddenLightboxContent{
+        display:none !important;
+    }
+    
+    /* ----------------------------------------------------------------
+			flare skin
+      -----------------------------------------------------------------*/
+
+      .peFlareLightbox .peFlareLightboxControls a {
+        display: block;
+        float: right;
+        width: 30px;
+        height: 30px;
+        opacity:0.65;
+    }
+    
+    .peFlareLightbox .peFlareLightboxControls a:hover{
+        opacity:1;
+    }
+    
+    /*previous arrow icon*/
+    .peFlareLightbox .peFlareLightboxControls a#peFlareLightboxControlPrev {
+        background:url(../img/flare/prev.png) no-repeat 0 0;
+    }
+    
+    /*next arrow icon*/
+    .peFlareLightbox .peFlareLightboxControls a#peFlareLightboxControlNext {
+        background:url(../img/flare/next.png) no-repeat 0 0;
+    }
+    
+    /*close lightbox icon*/
+    .peFlareLightbox .peFlareLightboxControls a#peFlareLightboxControlClose {
+        background:url(../img/flare/close.png) no-repeat 0 0;
+    }
+    
+    /*toggle thumbs icon*/
+    .peFlareLightbox .peFlareLightboxControls a#peFlareLightboxControlThumbs {
+        background:url(../img/flare/thumbs.png) no-repeat 0 0;
+    }
+    
+    .peFlareLightbox .peFlareLightboxSpinner span {
+        background: url(../img/flare/spinner.gif) no-repeat center center;
+        background-color: black;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > span {
+        background: url(../img/flare/spinner.gif) no-repeat center center;
+        background-color: black;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    .peFlareLightbox a.peFlareLightboxVideoIcon span {
+        background: url("../img/flare/start.png") no-repeat 0 0;
+    }
+    
+    .peFlareLightbox a.peFlareLightboxVideoIcon:hover span {
+        background-position: 0 -84px;
+    }
+    
+    
+    /*thumbnail frames*/
+    
+    .peFlareLightbox .peFlareLightboxThumbs > div > div > span {
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px #000;
+    }
+    
+    /* fit image frame*/
+    
+    .peFlareLightbox.desktop .peFlareLightboxContent .peFlareLightboxRenderImage img.fit {
+        border: 4px solid white;
+        box-shadow: 4px 4px 4px #000;
+    }
+    
+    
+    /*captions*/
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div {
+        background-color: black;
+        background-color: rgba(0,0,0,0.7);
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > h3,
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > p {
+        color: white;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .peFlareLightbox .peFlareLightboxCaptions > div > div > p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight:normal;
+        font-size:12px;
+        line-height:18px;
+        color:white;
+    }
+    
+    p.peFlareLightboxFontPreload {
+        font-family: 'Open Sans', sans-serif;
+        opacity: 0;
+        display: inline;
+        font-size: 1px;
+        width: 1px;
+        height: 1px;
+        position: fixed;
+    }
+    
+    
+    
+    /*mobile resolution*/
+    
+    @media (min-width: 480px) and (max-width: 767px) {
+        
+        /*smaller video play icon*/
+        .peFlareLightbox a.peFlareLightboxVideoIcon span {
+            background: url("../img/flare/start_mob.png") no-repeat 0 0;
+        }
+        
+        .peFlareLightbox a.peFlareLightboxVideoIcon:hover span {
+            background-position: 0 -42px;
+        }
+    }
+    
+     /* ----------------------------------------------------------------
+		Slider Ui
+      -----------------------------------------------------------------*/
+      
+    /*mentor slider ui*/
+    
+    .peVolo .peVoloPrev,
+    .peVolo .peVoloNext,
+    .peVolo .peVoloBullets{
+        position:absolute;
+        z-index: 100;
+    }
+    
+    .peVolo .peVoloPrev a,
+    .peVolo .peVoloNext a{
+        display:block;
+        width: 30px;
+        height:100%;
+        background-color: #000;
+        opacity:0.2;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        position:relative;
+        -webkit-transition: background-color 0.3s ease-out; 
+		   -moz-transition: background-color 0.3s ease-out; 
+			 -o-transition: background-color 0.3s ease-out; 
+				transition: background-color 0.3s ease-out; 
+    }
+    
+    .peVolo .peVoloPrev a i,
+    .peVolo .peVoloNext a i{
+        font-size:18px;
+        line-height:20px;
+        position:absolute;
+        top:50%;
+        color:#ccc;
+        height:20px;
+        margin-left:-1px;
+        margin-top:-8px;
+        text-align:center;
+    }
+    
+    .peVolo .peVoloNext a i{
+        margin-left:1px;
+    }
+    
+    .peVolo .peVoloPrev a:hover,
+    .peVolo .peVoloNext a:hover{
+        opacity:0.4;
+    }
+    
+    .peVolo .peVoloPrev a:hover i,
+    .peVolo .peVoloNext a:hover i{
+        color:#fff;
+    }
+    
+	.peVolo .peVoloPrev.pe-edges-buttons {
+		left: 30px;
+	}
+
+	.peVolo .peVoloNext.pe-edges-buttons {
+		right: 30px;
+	}
+
+    /*.peVolo .peVoloBullets a{
+        display:block;
+        width: 22px;
+        height: 22px;
+        opacity:0.65;
+        float:left;
+        margin-left:1px;
+    }
+    
+    .peVolo .peVoloBullets a:hover,
+    .peVolo .peVoloBullets a.selected{
+        opacity:1;
+    }
+    
+    .peVolo .peVoloBullets a{
+       background:url(../img/skin/slide_btn.png) no-repeat 0 0; 
+    }
+    
+    .peVolo .peVoloBullets a.selected{
+       background-image:url(../img/skin/slide_btn_active.png);
+    }*/
+    
+    
+    /*tablets*/
+    /*----------------------------------------------------------------------*/
+    @media (min-width: 768px) and (max-width: 1024px) {
+          
+
+        .mobile .peVolo .peVoloPrev.pe-edges-buttons {
+            left: 20px;
+        }
+
+        .mobile .peVolo .peVoloNext.pe-edges-buttons {
+            right: 20px;
+        }      
+        
+    }
+
+    /*small tablet*/
+    /*----------------------------------------------------------------------*/
+    @media (max-width: 767px) {
+        
+        .peVolo .peVoloPrev.pe-edges-buttons {
+            left: 10px;
+        }
+
+        .peVolo .peVoloNext.pe-edges-buttons {
+            right: 10px;
+        }   
+    }
+    
+    
+    /*mobile*/
+    /*----------------------------------------------------------------------*/
+    @media (max-width: 480px) {
+        
+        /*hide the slide buttons on mobile*/
+        .peVoloBullets{
+            display:none !important;
+        }
+
+    }
+
+      /* ----------------------------------------------------------------
+		slider_captions
+      -----------------------------------------------------------------*/
+
+      
+
+.peSlider > div > div.peCaption, .peSlider > div div.peCaption  {
+	position: absolute;
+	visibility: hidden;
+	-webkit-transition-duration: 0s !important;
+	-webkit-transition-property: none !important;
+	-moz-transition-duration: 0s !important;
+	-moz-transition-property: none !important;
+	-ms-transition-duration: 0s !important;
+	-ms-transition-property: none !important;
+	-o-transition-duration: 0s !important;
+	-o-transition-property: none !important;
+}
+
+.peSlider > div.peCaption {
+    position:absolute;
+	z-index: 95;
+	opacity: 0;
+}
+
+@media (max-width: 480px) {
+	.pe_visible_landscape, .pe_visible_tablet, .pe_visible_desktop {
+		display: none !important;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px)  {
+	.pe_visible_tablet, .pe_visible_desktop {
+		display: none !important;
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 980px)  {
+	.pe_visible_desktop {
+		display: none !important;
+	}
+}
+
+@media (max-width: 767px)  {
+	.peSlider > div.peCaption.pe-has-layers {
+		display: block !important;
+	}	
+}
+
+      /* ----------------------------------------------------------------
+	  Slider_captions_style
+      -----------------------------------------------------------------*/
+     
+.peSlider > div.peCaption {
+	padding: 15px;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.8);
+	font-family: 'Open Sans';
+	max-width: 350px;
+}
+
+.peSlider > div.peCaption h3 {
+	color: #84bd32;
+	font-family: 'Open Sans';
+	font-weight:600;
+	font-size:16px;
+	margin-bottom:0px;
+	letter-spacing:normal;
+}
+
+.peSlider > div.peCaption h3 a{
+	color:#84bd32;
+}
+
+.desktop .peSlider > div.peCaption h3 a:hover{
+	color:#fff;
+}
+
+.peCaption p{
+	margin-bottom:0;
+	color:#fff;
+	font-size:12px;
+	line-height:18px;
+}
+
+.peCaption .btn{
+	margin-top:10px;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer {
+	position: absolute;
+	font-size: 16px;
+	padding: 10px;
+	white-space:nowrap;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer img {
+	display: block;
+	max-width: none;
+}
+
+.peSlider > div.peCaption > .pe-caption-large{
+	font-size:45px;
+	line-height:48px;
+	font-weight:600;
+	letter-spacing:normal;
+}
+
+.peSlider > div.peCaption > .pe-caption-xlarge{
+	font-size:75px;
+	line-height:80px;
+	font-weight:700;
+}
+
+.peSlider > div.peCaption > .pe-caption-huge{
+	font-size:90px;
+	line-height:90px;
+	font-weight:400;
+	letter-spacing: -1px;
+	color:#222;
+}
+
+.peSlider > div.peCaption > .pe-caption-medium{
+	font-size:24px;
+	line-height:22px;
+	font-weight:400;
+	letter-spacing:normal;
+}
+
+.peSlider > div.peCaption > .pe-caption-small{
+	font-size:14px;
+	line-height:20px;
+	font-weight:400;
+	letter-spacing:normal;
+}
+
+.peSlider > div.peCaption > .pe-caption-bold{
+	font-weight:700;
+	color:#222;
+}
+
+.peSlider > div.peCaption > .pe-caption-background{
+	background-color:#d95137;
+	padding:5px 15px;
+	color:#fff;
+}
+
+.peSlider > div.peCaption > .pe-caption-color{
+	color:#d95137;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer.pe-caption-style-black {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-weight: 300;
+	font-size: 70px;
+	line-height: 80px;
+	color: #303030;
+	text-shadow: -1px -1px #909090;
+	max-width: 940px;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer.pe-caption-style-black.pe-caption-small {
+	font-weight: 300;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer.pe-caption-white {
+	color: white;
+}
+
+.peSlider > div.peCaption > .peCaptionLayer.pe-caption-style-black.pe-caption-thick {
+	font-weight: 700;
+}
+
+@media (max-width: 767px)  {
+	.peSlider > div.peCaption {
+		display: none !important;
+	}	
+}
+
+/* ----------------------------------------------------------------
+    Header Height
+-----------------------------------------------------------------*/
+
+/*header height*/
+
+header,
+.pe-menu-sticky header > div{
+	height:64px;
+}
+
+/*padding*/
+
+body{
+	padding-top:64px;
+}
+
+/*menu position*/
+.pe-menu-main,
+.pe-header-transparent.pe-header-scrolled .pe-menu-main{
+	padding-top:H-37px;
+}
+
+@media (max-width: 1023px) {
+	.pe-header-transparent .pe-menu-main,
+	.pe-menu-main{
+		padding-top:H-37px !important;
+	}
+}

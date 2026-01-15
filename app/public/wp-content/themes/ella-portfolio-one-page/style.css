@@ -1,0 +1,489 @@
+/*
+Theme Name: Ella Portfolio One Page
+Theme URI: https://pixelonetry.com/downloads/ella-portfolio-one-page-wordpress-theme/
+Template: ellapress
+Author: pixelonetry
+Author URI: https://pixelonetry.com/
+Description: EllaPress is a fully responsive Retina enabled One Page & Multipurpose WordPress Theme suitable for any kind of creative or business use. Premium Kenburn Slider Effects Free from EllaPress. The theme is highly optimized for both mobile and desktop platforms. One uses lazy-loading of images and compression of all required scripts, meaning not only will your website look great, but it will also be lightening fast. In case you would like to integrate an online shop to your website you will benefit from WooCommerce compatibility provided by this parallax WordPress Theme. EllaPress can be used for all kinds of business or corporate websites and is furthermore suitable for personal online presences. Thanks to its responsiveness, your content will be displayed well-organized on all kinds of screen size resolutions, EllaPress SEO Ready and translatabe with Polylang and WPML. EllaPress is SEO Ready. EllaPress supports popular WordPress plugins such as Elementor, WPML, Polylang, Yoast SEO, WooCommerce, Contact Form 7, Jetpack, and much more. The PRO demo at https://pixelonetry.com/previews/?theme=ella-premium
+Version: 0.0.4
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tested up to: 6.8.3
+Requires PHP: 5.6
+Text Domain: ella-portfolio-one-page
+Tags: grid-layout, custom-background, custom-logo, custom-menu, featured-images, post-formats, flexible-header, portfolio, threaded-comments, theme-options, sticky-post, full-width-template, right-sidebar, one-column, two-columns, blog, e-commerce, translation-ready
+*/
+
+.pr-title {
+   font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+}
+
+/* ----------------------------------------------------------------
+
+01. Fonts settings
+02. Default style
+03. Preloader style
+04. Scrollbar style
+05. Selection style
+06. Navigation style
+07. Header style
+08. Section style
+09. Social Icon Block style
+10. Slider style
+11. Heading style
+12. About banner style
+13. Team style
+14. Services style
+15. Pricing style
+16. FAQs style
+17. Gallery style
+18. Blog & Post style
+19. Button style
+20. Progress-wrap style
+21. Footer style
+
+------------------------------------------------------------------- */
+#service-home {
+  background-color: #FFF!important;
+}
+/*------------------------------------------------------------------
+Blog
+-------------------------------------------------------------------*/
+
+.blog-section {
+  background-color: #f0f2f7;
+  padding: 80px 0;
+}
+.blog-section .title {
+	text-transform: uppercase;
+	letter-spacing: 0.10em;
+    margin-bottom: 40px;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+}
+.blog-section h1.title span {
+   color: #5aa9ce;;
+}
+.blog-section .subtitle {
+	line-height: 48px;
+  margin-bottom: 40px;
+}
+.blog-section .pretitle {
+	margin-bottom: 40px;
+}
+.blog-section .icon { 
+    background-image: url(../images/section-title.png);
+    background-repeat: repeat-x;
+    background-position: center left;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #5aa9ce;
+} 
+.blog-section .icon i {
+    background-color: #f0f2f7;
+    font-size: 40px;
+    padding: 0 50px;
+}
+.blog-section .seperator {
+    margin-bottom: 20px;
+}
+.front-blog p {
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.front-blog .post-hover-effect {
+  margin-bottom: 20px!important
+}
+.front-blog .post .entry-title {
+  font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+  margin-bottom: 0px;
+  font-size: 25px;
+  color: #b8a279;
+  background-image: none!important;
+}
+.front-blog h2.entry-title:hover{
+  color: #b8a279!important;
+}
+.front-blog .entry-content {
+  margin-top: 0;
+}
+/*-------------------------------------------------------
+5.7. Hover Effects
+-------------------------------------------------------*/
+.post-hover-effect {
+  margin-bottom: -2.5px!important;
+  position: relative;
+}
+.post-hover-effect::before,
+.post-hover-effect::after {
+  background-color: #b8a279;
+  content: "";
+  /*background: #000;*/
+  height: 0;
+  width: 0;
+  z-index: 1;
+  position: absolute;
+  -webkit-transition-duration: 1.3s;
+  -o-transition-duration: 1.3s;
+  transition-duration: 1.3s;
+  margin-bottom: -2.5px!important;
+}
+.post-hover-effect::before {
+  right: 0;
+  opacity: 1;
+  top: 0;
+}
+.post-hover-effect::after {
+  bottom: 5px;
+  opacity: .7;
+  left: 0;
+}
+.post-hover-effect:hover::after, .post-hover-effect:hover::before {
+  background-color: #fff;
+  bottom: 0px;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+}
+.contactinfotitle {
+  font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+/*-------------------------------------------------------
+Portfolio CSS
+-------------------------------------------------------*/
+#section-portfolio {
+  background-color: #e6e9ef;
+}
+.peIsotopeGrid .peIsotopeItem > div > a {
+	display: block;
+}
+
+.peIsotopeGrid .peIsotopeItem > span.border {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	position: absolute; 
+	z-index: 50;
+}
+
+.mobile .peIsotopeGrid .peIsotopeItem > span.border {
+	-webkit-transform: translateZ(0px);
+}
+
+
+.peIsotopeGrid .peIsotopeItem > span.border.left {
+	border-left: 2px solid #ffffff;
+	width: 0px;
+	top: 0px; 
+	bottom: 0px; 
+}
+
+.peIsotopeGrid .peIsotopeItem > span.border.top {
+	border-top: 2px solid #ffffff;
+	top: 0px; 
+	left: 0px; 
+	right: 0px;
+}
+
+.peIsotopeGrid .peIsotopeItem.grid-first-col span.border.left {
+	display: none;
+}
+
+.peIsotopeGrid .peIsotopeItem.grid-first-row span.border.top {
+	display: none;
+}
+
+/*.peIsotopeGrid .peIsotopeItem span.cell-title {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px 20px;
+    display: block;
+    color: #ccc;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 16px;
+    transition: background-color 0.3s ease-out, opacity 0.3s ease-out;
+}
+    */
+
+.peIsotopeGrid .peIsotopeItem span.cell-title a {
+    pointer-events: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.peIsotopeGrid .peIsotopeItem span.cell-title.no-padding {
+	padding: 0px 0px;
+}
+
+.peIsotopeGrid .peIsotopeItem span.cell-title.no-padding a {
+	padding:5px 20px;
+	display: block;
+}
+
+.peIsotopeGrid .peIsotopeItem span.cell-title.no-padding a > i {
+	position: absolute;
+	right: 20px;
+	bottom: 8px;
+	font-size: 16px;
+}
+
+.mobile .peIsotopeGrid .peIsotopeItem span.cell-title{
+	-webkit-transform: translateZ(0px);
+}
+
+
+.peIsotopeGrid .peIsotopeItem span.cell-title.show-on-top {
+	z-index:10;
+}
+
+
+.peIsotopeGrid .peIsotopeItem .scalable {
+	overflow: hidden;
+	z-index:2;
+	position:relative;
+}
+
+.peIsotopeGrid .peIsotopeItem.isotope-item .scalable img {
+	max-width: 100%;
+	/*
+	width: 100%;
+	*/
+}
+
+.peIsotopeGrid .peIsotopeItem {
+	float: left;
+}
+
+.peIsotopeGrid .peIsotopeItem.isotope-item {
+	float: none;
+}
+
+.peIsotope .pe-menu-main .pe-menu {
+	top: 70px;
+}
+/* Keep header layout stable even with smaller logos */
+/*
+header.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px; /* keeps header tall enough even for small logos
+  padding: 10px 30px;
+}
+
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: auto;
+  max-height: 60px; 
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.pe-menu-main {
+  display: flex;
+  align-items: center;
+}
+*/
+
+/*-------------------------------------------------------
+Portfolio Filter
+-------------------------------------------------------*/
+
+	.peEllaFilter.portfolio{
+		position:relative;
+	}
+
+  .pe-container.filter {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically (optional, depending on container height) */
+    width: 100%;             /* Ensure the container takes full width */
+}
+
+  .filter-inner {
+      text-align: center; /* Center the contents inside the div */
+  }
+
+  .pe-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Center the list items horizontally */
+  }
+
+  .peEllaFilter.portfolio .peIsotopeGrid .peIsotopeItem span.cell-title a {
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  }
+
+   .peEllaFilter.portfolio .peIsotopeGrid .peIsotopeItem span.cell-title a:hover {
+  color: #ccc;
+  }
+
+	/*colors for filters in mobile arrangement*/
+	.peIsotopeFilter.pe-menu > li > a{
+		color:#fff !important;
+	}
+
+	.filter .peIsotopeFilter.pe-menu > li > a.active{
+		/*color:#b8a279!important;
+		background: #EE3158!important;
+		border: 1px solid #EE3158!important;*/
+       -webkit-box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2)!important;
+        box-shadow: 0px 8px 30px -5px rgba(0, 0, 0, 0.2)!important;
+        color: #fff!important;
+	}
+	/*.peIsotopeFilter.pe-menu > li > a.active:hover{
+		pointer-events: none;
+	}*/
+	/*filters button in mobile*/
+
+	.peEllaFilter .pe-menu-main .menu-toggle{
+		float:none;
+		width:auto;
+	}
+
+	.peEllaFilter .pe-menu-main .pe-menu{
+		padding-top:0;
+		top:45px;
+	}
+
+	.peEllaFilter .pe-menu-main .pe-menu > li > a{
+		font-size: 12px;
+		font-weight: 500;
+		margin: 0 5px;
+		padding: 8px 20px;
+		border-radius: 30px;
+		cursor: pointer;
+		padding-top:8px !important;
+		padding-bottom:8px !important;
+		padding-left:15px !important;
+		color: #333!important;
+		font-family: var(--first-font);
+		font-style: italic;
+	}
+	@media only screen and (max-width: 992px) {	
+		.peEllaFilter .pe-menu-main .pe-menu > li > a { 
+			color: #ccc!important;
+		}
+  }
+  @media only screen and (max-width: 768px) {
+    .peEllaFilter .pe-menu-main .pe-menu > li > a { 
+		color: #ccc!important;
+    }
+  
+}
+
+	.pe-block-fullwidth .peEllaFilter .pe-menu-main .pe-menu > li > a{
+		padding-left:0 !important;
+	}
+
+	.desktop .peEllaFilter .pe-menu-main .pe-menu > li > a{
+		padding-left:12px !important;
+	}
+
+	.peEllaFilter .pe-menu-main{
+		padding-bottom:0 !important;
+		padding-top:0 !important;
+		min-width:0 !important;
+	}
+
+/*-------------------------------------------------------
+Portfolio Main
+-------------------------------------------------------*/
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    width: 20%; /* 5 columns */
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .5s ease, opacity .5s ease;
+}
+.cell-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: opacity .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cell-title .overlay-content {
+    color: #fff!important;
+    padding: 20px;
+}
+.cell-title h4 {
+    color: #fff!important;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+.cell-title p {
+    font-size: 13px;
+    opacity: .8;
+}
+.portfolio-thumb:hover .cell-title {
+    opacity: 1;
+}
+.portfolio-thumb:hover img {
+    transform: scale(1.05);
+    opacity: .7;
+}
+.portfolio-item.hidden {
+    display: none !important;
+}
+@media (max-width: 991px) {
+  .pe-container.filter {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .pe-container.filter {
+    display: none !important;
+  }
+}
+
+
+
+
+  
+
+
+
+
+  
